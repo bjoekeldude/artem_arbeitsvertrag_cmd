@@ -1,5 +1,3 @@
-from os import closerange
-from tkinter import *
 import avlib as la
 import os
 
