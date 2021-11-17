@@ -1,6 +1,6 @@
 from os import closerange
 from tkinter import *
-import library_arbeitsvertrag as la
+import avlib as la
 import os
 import arbeitsvertrag_gui as ag
 
