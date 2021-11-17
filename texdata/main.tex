@@ -1,0 +1,224 @@
+\documentclass[twoside,a4paper]{scrreprt}
+\usepackage{tabularx, booktabs}
+
+
+\input{texdata/lat.tex}
+
+%\renewcommand{\thesection}{\huge{\color{ai_rot}§~\arabic{section}}}
+
+\usepackage{enumitem}
+
+
+\begin{document}
+%\ihead{}
+%\ohead{}
+%\BgThispage
+%\begin{minipage}[t]{\textwidth}
+    %\raggedleft
+    %\includegraphics[width=0.3\linewidth]{bilder/AILogoFull.png}
+%\end{minipage}
+\begin{minipage}[c][0.3\textheight][b]{\textwidth}
+    \centering
+    \Huge{\textbf{Arbeitsvertrag\\ zwischen \vorname \white \nachname \white und der \arbeitgeber}}
+\end{minipage}
+\vfill
+
+\begin{minipage}[b]{0.8\textwidth}
+\scriptsize
+    \begin{tabularx}{\linewidth}{XX}
+        \input{texdata/ai.tex}
+        %\input{nabla}
+        %Auto Intern GmbH        & +49\,(0)234\,5866\,422 \\
+        %Herner Straße 299       & info@auto-intern.de\\
+        %Gebäude B29             & \\
+        %44809 Bochum            & www.auto-intern.de\\
+    \end{tabularx}
+\end{minipage}
+\hfill
+
+
+\newpage
+\centering
+\section*{Kontrahenten}
+    Der folgende Vertrag wird geschlossen zwischen:
+    
+    \centerline{ }
+    \centerline{Fa. \arbeitgeber,}
+    \centerline{ansässig: Herner Str. 299 Gebäude B/29}
+    \centerline{44809 Bochum}
+    \centerline{ }
+    \centerline{vertreten durch \vertreter,}
+    \centerline{ }
+    nachfolgend \textbf{Gesellschaft} genannt, und:
+    \centerline{ }
+    \centerline{\vorname \white \nachname,}
+    \centerline{geboren am \geburtstag\white in \geburtsort,}
+    \centerline{wohnhaft \maanschriftStr \white \maanschriftNr,}
+    \centerline{\maanschriftPLZ \white \maanschriftStadt}
+    \centerline{}
+    \centerline{Kreditinstitut: \kontoInstitut}
+    \centerline{IBAN: \kontoIBAN}
+    \centerline{BIC: \kontoBIC }
+    \centerline{}
+    \centerline{Konfession: \konfession}
+    \centerline{Krankenversicherung: \krankenversicherung}
+    \centerline{Rentenversicherungsnummer: \rentenversicherungsnummer}
+    \centerline{Steuerklasse: \steuerklasse}
+    \centerline{}
+    
+    nachfolgend \textbf{Mitarbeiter} genannt.
+
+\newpage
+\section{Aufgaben und Tätigkeitsbereich}
+    \centerline{\textbf{}}
+    
+    \centerline{ }
+    \begin{enumerate}[label=(\alph*)]
+    	%\item[a)] Der Mitarbeiter erklärt sich nach ausdrücklichem Befragen, dass sie weder bei der Gesellschaft noch bei einem Rechtsvorgänger der Gesellschaft beschäftigt war.
+    	\item Der Mitarbeiter wird ab dem \beginn \white als \stellenbezeichnung \white tätig.
+    	\item Der Mitarbeiter übernimmt neben allgemeinen Tätigkeiten hauptsächlich die zwei folgenden Aufgaben:
+    	\aufgabe
+    	\item Desweiteren übernimmt der Mitarbeiter selbstständig allgemeine Tätigkeiten innerhalb Betriebsablaufs.
+    	\item Der Mitarbeiter untersteht hauptsächlich den Weisungen der Geschäftsleitung.
+    	\ifdefined\istStudent \item Der Mitarbeiter hat der Buchhaltung des Unternehmens vor Beginn seiner Beschäftigung eine Kopie seiner Immatrikulationsbescheinigung einzureichen.
+    	\fi
+    \end{enumerate}
+    
+\newpage      
+\section{Arbeitszeit}
+    
+    \centerline{ }
+    \begin{enumerate}[label=(\alph*)]
+    	\ifdefined\stundenbasis\item Der zeitliche Umfang der Tätigkeit beträgt \stunden Wochenstunden (auf Abruf) betragen, wobei die wöchentliche Arbeitszeit auch unter Zusammenrechnung weiterer Beschäftigungsverhältnisse nicht überschritten werden darf. Innerhalb der vorlesungsfreien Zeit darf der zeitliche Umfang 19 Wochenstunden (auf Abruf) überschreiten.
+    	\fi
+    	\ifdefined\pauschal
+    	\item Die Einteilung des zeitlichen Umfangs der Tätigkeit obliegt dem Mitarbeiter.
+    	\fi
+    	\item Über den Umfang der Tätigkeit ist ein monatlicher Nachweis zu führen.
+    \end{enumerate}
+
+\section{Urlaub}
+    
+    \centerline{ }
+    \begin{enumerate}[label=(\alph*)]
+    	\item Der Mitarbeiter hat Anspruch auf einen jährlichen Erholungsurlaub von \urlaub \white Arbeitstagen (unter Zu-grundelegung einer 5-Tage-Woche), der nach Abstimmung mit der Gesellschaft und unter Berücksichtigung der betrieblichen Belange innerhalb des Kalenderjahres zu nehmen ist.
+    	\item 15 Tage des Jahresurlaubsanspruchs werden durch die Geschäftsleitung im Rahmen von Betriebsurlaub festgelegt.
+    	\item Dem wird an bis zu 10 Tagen im Jahr zur Absolvierung von Prüfungsleistung im Rahmen von Bildungsurlaub freigestellt.
+    	\item Bei unterjährigem Beschäftigungsbeginn/ -ende reduziert sich der Urlaubsanspruch im ersten bzw. letzten Beschäftigungsjahr entsprechend um 1/12 pro Monat.
+    \end{enumerate}
+
+\section{Krankheit}
+    
+    \centerline{ }
+    \begin{enumerate}[label=(\alph*)]
+    	\item Im Krankheitsfall ist der Mitarbeiter verpflichtet, die Buchhaltung der Gesellschaft über die Arbeitsunfähigkeit und deren voraussichtliche Dauer unverzüglich zu informieren. Außerdem hat er ab dem ersten Krankheitstag eine ärztliche Bescheinigung vorzulegen, die spätestens am dritten Tage seit Beginn der Arbeitsunfähigkeit bei der Gesellschaft eingegangen sein muss.
+    	\item Dauert die Arbeitsunfähigkeit länger als in der Bescheinigung angegeben, so ist eine neue ärztliche Bescheinigung vorzulegen; Absatz \textbf{a)} gilt entsprechend.
+    \end{enumerate}
+
+\newpage    
+\section{Vergütung}
+
+    \centerline{ }
+    \begin{enumerate}[label=(\alph*)]
+    	\ifdefined\pauschal\item Der Mitarbeiter erhält für die geleistete Tätigkeit einen Lohn von \lohn \white brutto, der jeweils zum Monatsende auszuzahlen ist.
+    	\fi
+    	\item Die Vergütung wird am Monatsende unbar auf ein von dem Mitarbeiter zu benennendes Konto gezahlt.
+    	\item Anspruch auf Arbeitsentgelt bei persönlicher Verhinderung i.S.d. § 616 BGB besteht nicht.
+    	\item Die Abtretung und die Verpfändung der Ansprüche aus diesem Vertrag sind ausgeschlossen.
+    	\item Vor Fälligkeit geleistete Zahlungen auf die Bezüge sind Vorschüsse. Bei Beendigung des Anstellungsverhältnisses ist ein noch nicht verrechneter Vorschuss - gleich welcher Art- sofort zurück-zuzahlen bzw. zur Aufrechnung fällig.
+    	\item Alle Leistungen, die der Mitarbeiter - gleich aus welchem Rechtsgrund – über den in \textbf{a)} bestimmten Bruttostundenlohn erhält, werden freiwillig zugewendet. Ein Rechtsanspruch auf solche Leistungen entsteht auch durch eine wiederholte vorbehaltlose Zahlung nicht. Die Gesellschaft ist jederzeit berechtigt, derartige Leistungen ganz oder teilweise zu widerrufen.
+    	\item Der Mitarbeiter ist bei Bezug von Arbeitslosengeld, Rente oder anderen Bezügen verpflichtet, die Gesellschaft über sozialrechtliche Grenzen wie Hinzuverdienstgrenzen, Stundenbegrenzungen oder sonstigen Auflagen laufend in Kenntnis zu setzen. Persönliche Nachteile aufgrund fehlender Meldungen durch den Mitarbeiter gehen nicht zu Lasten der Gesellschaft.
+    	\ifdefined\bafoeg\begin{enumerate}
+    	    \item Der Mitarbeiter gab zu Protokoll, dass ihm eine 450,-€ Verdienstgrenze seitens des Bafög-Amtes auferlegt ist.
+    	\end{enumerate}
+    	\fi
+    	\ifdefined\rente\begin{enumerate}
+    	    \item Der Mitarbeiter gab zu Protokoll, dass er sich bereits in Rente befindet.
+    	\end{enumerate}
+    	\fi
+    \end{enumerate}
+\newpage
+      
+\newpage
+\section{Verschwiegenheitspflicht}
+
+\centerline{ }
+\begin{enumerate}[label=(\alph*)]
+	\item Der Mitarbeiter verpflichtet sich, über die ihm bekanntgewordenen oder anvertrauten Geschäftsvorgänge sowohl während der Dauer des Arbeitsverhältnisses als auch nach dessen Beendigung Dritten gegenüber Stillschweigen zu bewahren und sie nicht auf unlautere Art persönlich zu verwerten. Dies gilt insbesondere für Herstellungsverfahren und sonstige technische Einzelheiten, Kunden- und Lieferantenlisten, Umsatzziffern, Bilanzen und Angaben über die finanzielle Lage des Unternehmens. Der Mitarbeiter hat darüber hinaus darauf zu achten, dass Dritte nicht unbefugt Kenntnis von vertraulichen Informationen und Vorgängen erhalten können.
+	\item Der Mitarbeiter wird alle Unterlagen, auch eigene Aufzeichnungen und Ablichtungen und sonstige dem Mitarbeiter anvertraute Gegenstände, die die Gesellschaft betreffen, sorgfältig behandeln, aufbewahren und auf Verlangen jederzeit, spätestens jedoch unaufgefordert bei Beendigung des Arbeitsverhältnisses, an die Buchhaltung, bei deren Verhinderung hilfsweise an den Geschäftsführer der Gesellschaft herauszugeben.
+\end{enumerate}
+
+\section{Ende des Arbeitsverhältnisses/ Kündigung}
+
+\centerline{ }
+\begin{enumerate}[label=(\alph*)]
+%	\item[a)] Die ersten drei Monate des Anstellungsverhältnisses sind die Probezeit, in der das Arbeitsverhältnis von beiden Parteien mit einer Frist von zwei Wochen kündbar ist.
+	\item Der Arbeitsvertrag kann von beiden Vertragspartnern mit einer Frist von vier Wochen zum Ende eines Kalendermonats gekündigt werden.
+	\item Die Kündigung muss schriftlich erfolgen. Das Recht zu fristloser Kündigung aus wichtigem Grund im gesetzlichen Sinne bleibt davon unberührt.
+	\ifdefined\istStudent
+	    \item Das Arbeitsverhältnis endet automatisch mit Abschluss des Studiums, bzw. mit Ablauf des Tages der Exmatrikulation. Der Mitarbeiter ist verpflichtet die Gesellschaft unverzüglich über den Abschluss oder die Exmatrikulation zu informieren.
+	\fi
+	\ifdefined\istUnbefristet
+	    \item Das Arbeitsverhältnis ist unbefristet.
+	\else
+	    \item Das Arbeitsverhältnis ist befristet und endet automatisch am nde.
+	\fi
+\end{enumerate}
+
+\newpage
+\section{Elektronische Verarbeitung persönlicher Daten}
+
+\centerline{ }
+\begin{enumerate}[label=(\alph*)]
+	\item Der Mitarbeiter ist damit einverstanden, dass die das Anstellungsverhältnis betreffenden persönlichen Daten in die Dateien der Gesellschaft aufgenommen und elektronisch verarbeitet werden.
+	\item Sofern gegenüber den personenbezogenen Daten dieses Vertrages seitens des Mitarbeiters Änderungen eintreten, wird dies der Mitarbeiter umgehend schriftlich der Gesellschaft mitteilen.
+\end{enumerate}
+
+\section{Verfallsfristen}
+
+\centerline{ }
+Sämtliche Ansprüche aus dem Arbeitsverhältnis können nur schriftlich innerhalb einer Ausschlussfrist von drei Monaten ab Fälligkeit geltend gemacht werden. Ansprüche, die nicht innerhalb dieser Frist geltend gemacht werden, sind ausgeschlossen. Lehnt die Gegenpartei den Anspruch ab oder erklärt sie sich nicht innerhalb von einem Monat nach Geltendmachung des Anspruchs, so verfällt dieser, wenn er nicht innerhalb von drei Monaten nach Ablehnung oder dem Fristablauf gerichtlich geltend gemacht wird.
+
+\section{Schlussbestimmungen, Erfüllungsort, Gerichtsstand}
+
+\centerline{ }
+\begin{enumerate}[label=(\alph*)]
+	\item Mündliche oder schriftliche Nebenabreden zu diesem Anstellungsvertrag bestehen nicht.
+	\item Änderungen oder Ergänzungen dieses Anstellungsvertrages durch individuelle Vertragsabreden im Sinne des § 305 b) BGB bedürfen keiner Schriftform. Im Übrigen bedürfen Änderungen oder Ergänzungen dieses Anstellungsvertrages der Schriftform. Eine mündliche Aufhebung des Schriftformerfordernisses ist nicht möglich.
+	\item Sollte eine Bestimmung dieses Anstellungsvertrages ganz oder teilweise unwirksam sein oder werden, so wird hiervon die Wirksamkeit der übrigen Bestimmungen dieses Anstellungsvertrages nicht berührt. An die Stelle der unwirksamen Bestimmung tritt die gesetzliche Bestimmung, die dem Gewollten am Nächsten kommt. Dies gilt auch im Falle einer unbeabsichtigten Regelungslücke.
+	\item Jeder Vertragspartner hat eine Ausfertigung dieses Anstellungsvertrages erhalten.
+	\item Erfüllungsort und ausschließlicher Gerichtsstand ist der Sitz der Gesellschaft.
+	\item Dieser Vertrag unterliegt deutschem Recht mit Ausnahme des UN-Kaufrechts.
+\end{enumerate}
+
+\centerline{ }
+\centerline{ }
+\centerline{ }
+\centerline{ }
+\centerline{ }
+
+
+
+\begin{tabular}{lp{2em}l} 
+ \hspace{5cm}   && \hspace{4cm} \\\cline{1-1}\cline{3-3} 
+ Ort, Datum     && \vertreter \\ 
+				&& \arbeitgeber
+\end{tabular} 
+
+\centerline{ }
+\centerline{ }
+\centerline{ }
+\centerline{ }
+\centerline{ }
+
+
+
+
+\begin{tabular}{lp{2em}l} 
+ \hspace{5cm}   && \hspace{4cm} \\\cline{1-1}\cline{3-3} 
+ Ort, Datum     && \vorname\white\nachname
+\end{tabular} 
+
+\end{document}
+
+
